@@ -3,6 +3,7 @@ import bodyParser from "body-parser";
 import cors from "cors";
 import postRouter from "./apps/posts.js";
 import { client } from "./utils/db.js";
+import authRouter from "./apps/auth.js";
 
 async function init() {
   const app = express();
